@@ -5,64 +5,96 @@
     <title>Lockerbie</title>
     <style>
 
-    body{
-      margin: 0 auto;
-      font-family: monospace, sans-serif;
-      font-size: 20px;
-      color: #000;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-    }
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
 
+body{
+  background-color:#193441;
+  dislay:grid;
+  justify-content:center;
+  align-items:center;
+  font-family: 'Montserrat', sans-serif;
+}
 
+.form{
+  margin-top:20%;
+}
 
-    input{
-      text-align: right;
-      border: 1px solid #193442;
-      padding: 10px 100px;
-      margin: 20px auto;
-    }
+input{
+  display:block;
+  background:inherit;
+  width:350px;
+  height:40px;
+  color:#3E606F;
+  font-size:20px;
+  margin:27px auto;
+  box-sizing: border-box;
+  border:1px solid rgba(49, 170, 175,0.52);
+  border-radius:25px;
+  padding:20px;
+}
 
-    button{
-      color: #fff;
-      width: 100px;
-      height: 40px;
-      border: none;
-      margin: 10px;
-    }
+a{
+  text-decoration:none;
+}
+.buttons{
+  display:grid;
+  justify-content:center;
+}
 
-    .sign{
-      background-color: #193441;
-    }
+.signup{
+  background:#31AA9D;
+  font-size:20px;
+  width:350px;
+  height:40px;
+  padding:10px 0 0;
+  border:none;
+  border-radius:25px;
+  text-align: center;
+  color:rgba(244, 244, 244, 0.66);
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+}
 
-    .facebook{
-      background-color: blue;
-    }
+.social{
+  display:inline;
+  margin-top:30px;
+  text-align:center;
+}
 
-    .google{
-      background-color: red;
-    }
+.btn{
+  width:168px;
+  height:40px;
+  margin:10px;
+  padding:10px 30px;
+  color:#f4f4f4;
+}
 
-    .buttons{
-      display: flex;
-      flex-direction: row;
-    }
+.facebook{
+  background:#3169AA;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 500px;
+}
+.google{
+  background:#D73535;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 500px;
+}
 
     </style>
   </head>
   <body>
-    <h1>Lockerbie</h1>
-    <input type="text" placeholder="Name...">
-    <input type="text" placeholder="Email..">
-    <input type="text" placeholder="Password">
-    <input type="text" placeholder="Retype Password">
-    <div class="buttons">
-      <button class="sign">Sign Up</button>
-      <button class="facebook">facebook</button>
-      <button class="google">google</button>
+<div class="form">
+    <input type="text" Placeholder="Name..">
+    <input type="Email" Placeholder="Email..">
+    <input type="text" Placeholder="Password">
+    <input type="text" Placeholder="Re-type Password">
+</div>
+<div class="buttons">
+    <a href="#" class="signup">SignUp</a>
+    <div class="social">
+      <a href="#" class="btn facebook">facebook</a>
+      <a href="#" class="btn google">Google</a>
     </div>
-
+</div>
 
   </body>
 </html>
