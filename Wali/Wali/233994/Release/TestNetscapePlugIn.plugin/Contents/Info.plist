@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>17E199</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>TestNetscapePlugIn</string>
+	<key>CFBundleGetInfoString</key>
+	<string>420+, Copyright 2006-2009 Apple Inc.</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.testnetscapeplugin</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>BRPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>CFPlugInDynamicRegisterFunction</key>
+	<string></string>
+	<key>CFPlugInDynamicRegistration</key>
+	<string>NO</string>
+	<key>CFPlugInFactories</key>
+	<dict>
+		<key>00000000-0000-0000-0000-000000000000</key>
+		<string>MyFactoryFunction</string>
+	</dict>
+	<key>CFPlugInTypes</key>
+	<dict>
+		<key>00000000-0000-0000-0000-000000000000</key>
+		<array>
+			<string>00000000-0000-0000-0000-000000000000</string>
+		</array>
+	</dict>
+	<key>CFPlugInUnloadFunction</key>
+	<string></string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>9E145</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>17E189</string>
+	<key>DTSDKName</key>
+	<string>macosx10.13</string>
+	<key>DTXcode</key>
+	<string>0930</string>
+	<key>DTXcodeBuild</key>
+	<string>9E145</string>
+	<key>WebPluginDescription</key>
+	<string>Simple Netscape plug-in that handles test content for WebKit</string>
+	<key>WebPluginMIMETypes</key>
+	<dict>
+		<key>application/x-webkit-test-netscape</key>
+		<dict>
+			<key>WebPluginExtensions</key>
+			<array>
+				<string>testnetscape</string>
+			</array>
+			<key>WebPluginTypeDescription</key>
+			<string>test netscape content</string>
+		</dict>
+		<key>image/png</key>
+		<dict>
+			<key>WebPluginExtensions</key>
+			<array>
+				<string>png</string>
+			</array>
+			<key>WebPluginTypeDescription</key>
+			<string>PNG image</string>
+		</dict>
+	</dict>
+	<key>WebPluginName</key>
+	<string>WebKit Test PlugIn</string>
+</dict>
+</plist>

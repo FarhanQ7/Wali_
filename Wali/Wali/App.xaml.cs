@@ -8,7 +8,7 @@ namespace Wali
 		{
 			InitializeComponent();
 
-			MainPage = new NavigationPage(new WaliPage());
+			MainPage = new NavigationPage(new MyPage());
 		}
 
 		protected override void OnStart()

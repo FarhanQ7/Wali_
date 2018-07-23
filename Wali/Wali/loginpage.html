@@ -4,65 +4,109 @@
     <meta charset="utf-8">
     <title>Lockerbie</title>
     <style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
+body{
+  background-color:#193441;
+  dislay:grid;
+  justify-content:center;
+  align-items:center;
+  font-family: 'Montserrat', sans-serif;
+}
+.form{
+  margin-top:20%;
+}
+input{
+  display:block;
+  background:inherit;
+  width:350px;
+  height:40px;
+  color:#3E606F;
+  font-size:20px;
+  margin:27px auto;
+  box-sizing: border-box;
+  border:1px solid rgba(49, 170, 175,0.52);
+  border-radius:25px;
+  padding:20px;
+}
 
-    body{
-      margin: 0 auto;
-      font-family: monospace, sans-serif;
-      font-size: 20px;
-      color: #000;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-    }
-
-
-
-    input{
-      text-align: right;
-      border: 1px solid #193442;
-      padding: 10px 100px;
-      margin: 20px auto;
-    }
-
-    button{
-      color: #fff;
-      width: 100px;
-      height: 40px;
-      border: none;
-      margin: 10px;
-    }
-
-    .sign{
-      background-color: #193441;
-    }
-
-    .facebook{
-      background-color: blue;
-    }
-
-    .google{
-      background-color: red;
-    }
-
-    .buttons{
-      display: flex;
-      flex-direction: row;
-    }
-
+a{
+  text-decoration:none;
+}
+.buttons{
+  display:grid;
+  justify-content:center;
+}
+.signup{
+  background:#31AA9D;
+  font-size:20px;
+  width:350px;
+  height:40px;
+  padding:10px 0 0;
+  border:none;
+  border-radius:25px;
+  text-align: center;
+  color:rgba(244, 244, 244, 0.66);
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+}
+.social{
+  display:inline;
+  margin-top:30px;
+  text-align:center;
+}
+.btn{
+  width:168px;
+  height:40px;
+  margin:10px;
+  padding:10px 30px;
+  color:#f4f4f4;
+}
+.facebook{
+  background:#3169AA;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 500px;
+}
+.google{
+  background:#D73535;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 500px;
+}
     </style>
+    <script type="text/javascript" src="./signup.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC4sBEFrkjyuPX_3V43ycWf5GXWHbG_Jng",
+    authDomain: "lockerbie-4945d.firebaseapp.com",
+    databaseURL: "https://lockerbie-4945d.firebaseio.com",
+    projectId: "lockerbie-4945d",
+    storageBucket: "lockerbie-4945d.appspot.com",
+    messagingSenderId: "448182165183"
+  };
+  firebase.initializeApp(config);
+</script>
   </head>
   <body>
-    <h1>Lockerbie</h1>
-    <input type="text" placeholder="Name...">
-    <input type="text" placeholder="Email..">
-    <input type="text" placeholder="Password">
-    <input type="text" placeholder="Retype Password">
-    <div class="buttons">
-      <button class="sign">Sign Up</button>
-      <button class="facebook">facebook</button>
-      <button class="google">google</button>
+<div class="form">
+    <input type="text" id="Name" Placeholder="Name..">
+    <input type="Email" id="Email" Placeholder="Email..">
+    <div id="Email_err" hidden=true> Hi </div>
+    <input type="password"  id="Password"Placeholder="Password">
+    <div id="Pass_err" hidden=true> Oops your password needs to be at least 6 characters </div>
+    <input type="password" id="Retype" Placeholder="Re-type Password">
+    <div id="Retype_err" hidden=true> Oops the Passwords don't match </div>
+</div>
+<div class="buttons">
+    <a href="#" class="signup" id="sign" onclick="myfunc()">SignUp</a>
+    <div class="social">
+      <a href="#" class="btn facebook">facebook</a>
+      <a href="#" class="btn google">Google</a>
     </div>
+</div>
 
 
+
+
+  </script>
   </body>
 </html>
